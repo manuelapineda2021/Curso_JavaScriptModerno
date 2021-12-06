@@ -1,0 +1,11 @@
+// Configuración ESLint:Permite configurar qué opciones quiere que rebice ESLint en el código
+{
+    // Configuración puntos y comas
+    "parserOptions": {
+        "ecmaVersion":8
+    },
+    "rules": {
+        "semi": ["error", "always"]
+    }
+
+}
