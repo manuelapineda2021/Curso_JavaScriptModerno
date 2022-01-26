@@ -1,0 +1,6 @@
+¿Qué diferencia hay entre un array y un objeto?
+
+-Un array sirve para agrupar elementos de un mismo tipo
+-Un objeto es una variable que agrupai información de un elemento u objeto 
+
+*Apesar que un array este declarado como const, los valores si se pueden modificar 
