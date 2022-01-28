@@ -4,3 +4,8 @@
 -Un objeto es una variable que agrupai información de un elemento u objeto 
 
 *Apesar que un array este declarado como const, los valores si se pueden modificar 
+
+¿Qué es la forma Imperativa y Declarativa a la hora de modificar un arreglo?
+
+-Imperativa modifica el objeto actual
+-Declarativa toma el valor del objeto actual y le agrega el objeto agregar
