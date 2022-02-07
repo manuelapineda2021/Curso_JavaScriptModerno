@@ -1,0 +1,10 @@
+¿Qué es una función?
+En cualquier lenguaje de programación las funciones son una serie de procedimientos o instrucciones (lineas
+de código)
+
+-Una ventaja de las ventajas de una función es que son reutilizables 
+-Existen dos formas de crear una función: declaración de función y expresión de función
+
+¿Cómo diferenciar si es una función o un método?
+Una función siempre tiene el nombre de la función y ()...en cambio un método se conforma de una variable 
+seguido de un. y el nombre del método o función
