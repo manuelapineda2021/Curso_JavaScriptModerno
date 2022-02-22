@@ -1,3 +1,5 @@
+// Una estructura de control ejecuta nuestro código en case de que una condición se cumpla o
+// no se cumpla
 // Estructura if
 const puntaje = 1000;
 
