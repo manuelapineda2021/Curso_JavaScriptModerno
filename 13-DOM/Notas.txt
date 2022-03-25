@@ -1,0 +1,12 @@
+DOM (Document Object Model)
+
+-El DOM contiene todos los elementos y atributos de nuestra página web (en si es nuestro HTML)
+-Una de las características del DOM es que se pueden seleccionar elementos y sobre el 
+poder realizar ciertas operaciones
+-El archivo HTML en javascript se define como document
+-Document es el objeto principal del DOM
+-Las etiquetas de HTML en el DOM se refieren como elementos
+-DOMScript permite crear un HTML en el DOM
+-En javascript se tiene accedo a un objeto que se llama document, este me trae todo el HTML (head y body)
+-Siempre se hace referencia para traer elementos con el objeto de document
+-HTMLCollection es similar a un arreglo
