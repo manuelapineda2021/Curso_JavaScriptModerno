@@ -10,3 +10,9 @@ poder realizar ciertas operaciones
 -En javascript se tiene accedo a un objeto que se llama document, este me trae todo el HTML (head y body)
 -Siempre se hace referencia para traer elementos con el objeto de document
 -HTMLCollection es similar a un arreglo
+-Las clases tiene una caracteristica que se pueden repetir en el HTML
+-getElementsByCLassName puede traerte multiples elementos, ya que una clase puede ser utilizada más
+de una vez en el HTML
+-El nombre de un id solo se debe usar UNA SOLA VEZ por documento
+-El getElementById cuando hay dos id iguales, retorna el primero que encuentre
+-querySelector permite seleccionar id y clases al mismo tiempo

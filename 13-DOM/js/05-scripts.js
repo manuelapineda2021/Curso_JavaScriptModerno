@@ -1,0 +1,1 @@
+// querySelectorAll = retorna todos los elementos 
