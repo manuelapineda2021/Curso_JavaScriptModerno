@@ -1,18 +1,39 @@
 DOM (Document Object Model)
 
 -El DOM contiene todos los elementos y atributos de nuestra página web (en si es nuestro HTML)
+
 -Una de las características del DOM es que se pueden seleccionar elementos y sobre el 
 poder realizar ciertas operaciones
+
 -El archivo HTML en javascript se define como document
+
 -Document es el objeto principal del DOM
+
 -Las etiquetas de HTML en el DOM se refieren como elementos
+
 -DOMScript permite crear un HTML en el DOM
+
 -En javascript se tiene accedo a un objeto que se llama document, este me trae todo el HTML (head y body)
+
 -Siempre se hace referencia para traer elementos con el objeto de document
+
 -HTMLCollection es similar a un arreglo
+
 -Las clases tiene una caracteristica que se pueden repetir en el HTML
+
 -getElementsByCLassName puede traerte multiples elementos, ya que una clase puede ser utilizada más
 de una vez en el HTML
+
 -El nombre de un id solo se debe usar UNA SOLA VEZ por documento
+
 -El getElementById cuando hay dos id iguales, retorna el primero que encuentre
+
 -querySelector permite seleccionar id y clases al mismo tiempo
+
+-¿Cuál es la diferencia entre querySelector y querySelectorAll?
+querySelector selecciona el primer elemento que encuentra que cumpla con la condición y querySelectorAll
+selecciona todos los elementos que cumplan con la condición.
+
+-Se puede seleccionar un elemento del DOM y modificarlo
+
+-En javascript también se puede modificar CSS
