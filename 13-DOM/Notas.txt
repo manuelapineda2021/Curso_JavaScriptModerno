@@ -37,3 +37,9 @@ selecciona todos los elementos que cumplan con la condición.
 -Se puede seleccionar un elemento del DOM y modificarlo
 
 -En javascript también se puede modificar CSS
+
+-En javascript todo esta conectado al document
+
+-Con children recorro hacia los elementos hijos
+
+-Con parentElement recorro hacia los nodos padres
