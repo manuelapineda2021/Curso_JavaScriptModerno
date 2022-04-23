@@ -1,0 +1,6 @@
+-Un evento es cuando sucede algo se ejecuta un código
+
+-scrollY: arriba-abajo ó abajo-arriba
+
+-cuando se cuentas los pixeles y se esta yendo de abajo arriba, los pixeles empiezan a disminuir. En el caso
+de arriba- abajo, los pixeles empiezan a aumentar
