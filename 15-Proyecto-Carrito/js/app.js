@@ -8,7 +8,17 @@ let articulosCarrito = [];
 cargarEventListeners(); //llamar función 
 function cargarEventListeners () {
     //Cuando agregas un curso presionando "Agregar al Carrito"
-    listaCursos.addEventListener('click', agregarCurso)
+    listaCursos.addEventListener('click', agregarCurso);
+
+    //Elimina cursos del carrito
+    carrito.addEventListener('click', eliminarCurso);
+
+    //Vaciar carrito
+    vaciarCarritoBtn.addEventListener('click', () =>{
+        articulosCarrito = []; //reseteamos el arreglo
+
+        limpiarHtml();//eliminamos todo el HTML
+    })
 }
 
 //Funciones 
@@ -20,6 +30,18 @@ function agregarCurso (event){
         leerDatosCurso(cursoSeleccionado);
     }
     
+}
+
+//Eliminar un curso del carrito
+function eliminarCurso(event){
+    if(event.target.classList.contains('borrar-curso')){
+        const cursoId = event.target.getAttribute('data-id');
+
+        //Eliminar del arreglo de articulosCarrito por el data-id
+        articulosCarrito = articulosCarrito.filter(curso => curso.id !== cursoId);
+        
+        carritoHTML(); //Iterar sobre el carrito y mostrar su HTML
+    }
 }
 
 //Lee el contenido del HTML al que le dimos click y extrae la información del curso
@@ -34,8 +56,26 @@ function leerDatosCurso(curso){
         cantidad: 1
     }
 
-    //Agregar articulo al carrito 
-    articulosCarrito = [...articulosCarrito, infoCurso];
+    //Revisa si un elemento ya existe en el carrito
+    const existe = articulosCarrito.some(curso => curso.id === infoCurso.id);
+    if(existe){
+
+        //Actualizamos la cantidad
+        const cursos = articulosCarrito.map(curso =>{
+            if(curso.id===infoCurso.id){
+                curso.cantidad++;
+                return curso; //retorna el objeto actualizado
+            }else{
+                return curso; // retorna el objeto con los elementos que no estan duplicados
+            }
+        })
+
+        articulosCarrito=[...cursos];
+    }else{
+        //Agregar articulo al carrito 
+        articulosCarrito = [...articulosCarrito, infoCurso];
+    }
+
     console.log(articulosCarrito);
     carritoHTML();
 
