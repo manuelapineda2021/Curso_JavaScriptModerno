@@ -27,25 +27,34 @@ function iniciarApp (){
 //Valida el formulario
 function validarFormulario(event){
     
-    if(event.target.length > 0){
+    if(event.target.value.length > 0){
 
-        console.log('si hay algo');
+        //Elimina mensaje de error...
+        const eliminarError = document.querySelector('p.error');
+        eliminarError.remove();
 
-    }else{
+        event.target.classList.remove('border', 'border-red-500');
+        event.target.classList.add('border', 'border-green-500');
+
+        }else{
+        event.target.classList.remove('border', 'border-green-500');
         event.target.classList.add('border', 'border-red-500');
         mostrarError('Todos los campos son obligatorios');
     }
 
     //Validar email
     if(event.target.type === 'email'){
-        const resultado = event.target.value.indexOf('@'); //revisa que en el valor exista lo que se le pasa dentro del parentesis
-        // console.log(resultado);
-        if(resultado < 0){
-                mostrarError('El Email no es válido');
+        const expRegEmail = /^[-\w.%+]{1,64}@(?:[A-Z0-9-]{1,63}\.){1,125}[A-Z]{2,63}$/i
+        if(expRegEmail.test(event.target.value)){
+            console.log("El Email es válido");
+        }else{
+            event.target.classList.add('border', 'border-red-500');
+            mostrarError('El email ingresado no es válido');
         }
     } 
 
 }
+
 
 function mostrarError(menssage){
     const mensajeError = document.createElement('p');
